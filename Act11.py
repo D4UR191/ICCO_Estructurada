@@ -26,15 +26,15 @@ def glosario(num):
 
 lista = []
 contador = 0
-n = int(input("Cantidad de números: "))
-print(f"\nIntroduce números flotantes entre 1.0 y 10.0")
+n = int(input("Cantidad de numeros: "))
+print(f"\nIntroduce numeros flotantes entre 1.0 y 10.0")
 while contador < n:
-    numero = float(input("\tNuevo número: "))
+    numero = float(input("\tNuevo numero: "))
     if numero >= 1 and numero <= 10:
         lista.append(numero)
         contador += 1
     else:
-        print("\nNúmero fuera de rango, intenta nuevamente.")
+        print("\nNumero fuera de rango, intenta nuevamente.")
 ordenada = sorted(lista)
 print(f"\nLa lista ordenada es: {ordenada}")
 print(f"El mayor es: {ordenada[n-1]} ({glosario(int(ordenada[n-1]))}...)")

@@ -1,25 +1,24 @@
-# Números primos
+# Buscador de números primos
 
 
 def primos(lista):
     primo = []
     for x in lista:
         divisor = 1
-        if x == 2 and x not in primo:
+        if x == 2:
             primo.append(x)
         else:
             while divisor < x:
                 divisor += 1
                 if x % divisor == 0:
                     break
-                elif divisor + 1 == x and x not in primo:
+                elif divisor + 1 == x:
                     primo.append(x)
     return primo
 
 
-n = 5
+n = 100
 num = []
-print(f"\nIngresa hasta {n} numeros enteros")
-for i in range(0, n):
-    num.append(int(input("\tNuevo numero: ")))
-print(f"\nPrimos encontrados: {sorted(primos(num))}")
+for i in range(0, n + 1):
+    num.append(i)
+print(f"\nPrimos encontrados del 1 al {n}: {primos(num)}")

@@ -1,4 +1,4 @@
-# Ordenamiento de números
+# Ordenamiento de numeros
 
 
 def ordenador(vector):  # Bubble sort
@@ -16,7 +16,7 @@ def ordenador(vector):  # Bubble sort
 
 lista = []
 numeros = 10
-print(f"\nOrdenamiento de {numeros} números")
+print(f"\nOrdenamiento de {numeros} numeros")
 for i in range(0, numeros):
-    lista.append(int(input("\tNuevo número: ")))
+    lista.append(int(input("\tNuevo numero: ")))
 print(f"\nLista ordenada (decreciente): {ordenador(lista)}")
